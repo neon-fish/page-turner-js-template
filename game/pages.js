@@ -6,6 +6,7 @@ const PAGE_ID = {
   start: Utils.id,
   yes: Utils.id,
   no: Utils.id,
+  featuresList: Utils.id,
 };
 
 /**
@@ -38,12 +39,23 @@ export const pages = [
     ],
   },
   {
+    id: PAGE_ID.featuresList,
     content: [
       "Would you like to see examples of some of the features?",
     ],
     choices: [
+      { text: `"Content" settings (The text displayed above)`, nextPage: PAGE_ID.featuresList },
+      { text: `"Choices" settings (The choices like these)`, nextPage: PAGE_ID.featuresList },
+      { text: `Styling and theming options`, nextPage: PAGE_ID.featuresList },
+      { text: `Displaying images`, nextPage: PAGE_ID.featuresList },
+      { text: `Playing music and sound clips`, nextPage: PAGE_ID.featuresList },
+      { text: `Other game settings`, nextPage: PAGE_ID.featuresList },
       { text: "That's it thanks, take me back to the beginning.", nextPage: PAGE_ID.start },
     ],
+    choicesSettings: {
+      top: "30%",
+      height: "70%",
+    }
   },
   {
     id: PAGE_ID.no,
