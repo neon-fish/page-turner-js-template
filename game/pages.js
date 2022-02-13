@@ -24,8 +24,8 @@ export const pages = [
       "Cool, right?\n(Use the Mouse or Up/Down Arrows + Enter to select choices)",
     ],
     choices: [
-      { text: "That's pretty nifty!", nextPage: PAGE_ID.yes },
-      { text: "I'm not very impressed.", nextPage: PAGE_ID.no },
+      { text: "That's pretty nifty!", next: PAGE_ID.yes },
+      { text: "I'm not very impressed.", next: PAGE_ID.no },
     ],
   },
   {
@@ -44,13 +44,13 @@ export const pages = [
       "Would you like to see examples of some of the features?",
     ],
     choices: [
-      { text: `"Content" settings (The text displayed above)`, nextPage: PAGE_ID.featuresList },
-      { text: `"Choices" settings (The choices like these)`, nextPage: PAGE_ID.featuresList },
-      { text: `Styling and theming options`, nextPage: PAGE_ID.featuresList },
-      { text: `Displaying images`, nextPage: PAGE_ID.featuresList },
-      { text: `Playing music and sound clips`, nextPage: PAGE_ID.featuresList },
-      { text: `Other game settings`, nextPage: PAGE_ID.featuresList },
-      { text: "That's it thanks, take me back to the beginning.", nextPage: PAGE_ID.start },
+      { text: `"Content" settings (The text displayed above)`, next: PAGE_ID.featuresList },
+      { text: `"Choices" settings (The choices like these)`, next: PAGE_ID.featuresList },
+      { text: `Styling and theming options`, next: PAGE_ID.featuresList },
+      { text: `Displaying images`, next: PAGE_ID.featuresList },
+      { text: `Playing music and sound clips`, next: PAGE_ID.featuresList },
+      { text: `Other game settings`, next: PAGE_ID.featuresList },
+      { text: "That's it thanks, take me back to the beginning.", next: PAGE_ID.start },
     ],
     choicesSettings: {
       top: "30%",
@@ -60,7 +60,7 @@ export const pages = [
   {
     id: PAGE_ID.no,
     images: [
-      { pos: "bg", url: IMAGE_URL.black },
+      { slot: "bg", url: IMAGE_URL.black },
     ],
     content: [
       "Oh really? This isn't good enough for you?",
@@ -76,7 +76,7 @@ export const pages = [
   },
   {
     images: [
-      { pos: "bg", url: IMAGE_URL.hell },
+      { slot: "bg", url: IMAGE_URL.hell },
     ],
     content: [
       "Ha ha!",
