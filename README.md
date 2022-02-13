@@ -1,7 +1,7 @@
 
-# MCGE JS Template
+# PageTurner JS Template
 
-This is a Javascript example template for a [Multiple Choice Game Engine (MCGE)](https://github.com/neon-fish/mcge) project.
+This is a Javascript example template for a [PageTurner](https://github.com/neon-fish/page-turner) project.
 
 ## Development
 

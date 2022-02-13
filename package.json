@@ -1,5 +1,5 @@
 {
-  "name": "mcge-js-template",
+  "name": "page-turner-js-template",
   "version": "0.1.0",
   "description": "",
   "main": "index.html",
@@ -11,7 +11,7 @@
   "author": "Ed Johnson, Neon Fish Software Ltd.",
   "license": "MIT",
   "dependencies": {
-    "mcge": "^0.1.1",
+    "@neonfish/page-turner": "^0.1.9",
     "mithril": "^2.0.4"
   },
   "devDependencies": {
